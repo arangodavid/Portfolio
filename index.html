@@ -6,7 +6,8 @@
         <title>NEXT HIRE</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <script src="https://use.fontawesome.com/dbeed66100.js"></script>
+          <script src="https://use.fontawesome.com/21f8382a31.js"></script>
+          <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
         <link rel="apple-touch-icon" href="apple-touch-icon.png">
         <!-- Place favicon.ico in the root directory -->
 
@@ -14,78 +15,67 @@
         <link rel="stylesheet" href="css/main.css">
         <script src="js/vendor/modernizr-2.8.3.min.js"></script>
     </head>
+
     <body>
-      <header>
+
+      <!-- <header>
         <nav>
 			    <ul>
 				    <li class="nav_list"><a href="Home.html">Home</a></li>
 				    <li class="nav_list nav_left"><a href="About.html">About</a></li>
-				    <li class="nav_list nav_left"><a href="Portfolio.html">Portfolio</a></li>
+				    <li class="nav_list nav_left"><a href="index.html">Portfolio</a></li>
 				    <li class="nav_list nav_left"><a href="Discover.html">Discover</a></li>
 				    <li class="nav_list nav_left"><a href="Help.html">Help</a></li>
 			   </ul>
 	      </nav>
-     </header>
+     </header> -->
      <section class="wrapper">
-       <ul class="project_list">
-          <li class="projects">
-             <div>
-		             <a href="#"><img class="propic l" src="one.png" /></a>
-             </div>
-          </li>
-          <li class="projects">
-             <div>
-                 <a href="#"><img class="propic mL" src="two.png" /></a>
-             </div>
-          </li>
-          <li class="projects">
-             <div>
-                <a href="#"><img class="propic mR" src="three.png" /></a>
-             </div>
-          </li>
-          <li class="projects">
-             <div>
-                <a href="#"><img class="propic r" src="four.png" /></a>
-             </div>
-          </li>
-          <li class="projects">
-             <div>
-                  <a href="#"><img class="propic l" src="five.png" /></a>
-             </div>
-          </li>
-          <li class="projects">
-             <div>
-                <a href="#"><img class="propic mL" src="six.png" /></a>
-             </div>
-          </li>
-          <li class="projects">
-             <div>
-                <a href="#"><img class="propic mR" src="seven.png" /></a>
-             </div>
-          </li>
-          <li class="projects">
-             <div>
-                  <a href="#"><img class="propic r" src="eight.png" /></a>
-             </div>
-          </li>
-      </ul>
-       <h1>Propell Yourself...</h1>
-       <section class="about_container">
-         <img class="me" src="pic.jpg" alt="Author Portrait"/>
-         <article>
-          <h3>My name is David Arango</h3>
-           I’ve been told I can’t by many, but that has never stopped me from
-           persevering and getting to where I am today this has given me a unique
-           drive and ambition. I am a leader, aspiring full-stack developer, and
-           an optimist. With a positive mind and diligent work ethic, I’m detail
-           oriented and meticulous about completing everyday tasks with excellence.
-           I’m a natural leader who welcomes group projects where I can effectively
-           communicate with others and aggressively drive to accomplish our objectives.
-           Learning is pleasure and as full-stack developer in training, I am always reading,
-           researching and practicing new techniques to better hone my craft.
+       <header>
+         <img src="mountains.jpg" alt="Computer Desk"/>
+         <i class="fa fa-cloud cloud" aria-hidden="true"></i>
+         <ul class="weather"></ul>
+       </header>
+       <section class="myself">
+         <i class="fa fa-handshake-o" aria-hidden="true"></i>
+         <span class="name">David Arango</span>
+         <p class="quote">"Don’t ask what the world needs. Ask what makes you come alive, and
+           go do it. Because what the world needs is people who have come alive."
+           <span class="author">-- Howard Thurman</span>
+        </p>
+        </section>
+       <h1>About Me</h1>
+       <h2 class="ambitionsHeader">Ambitions...</h2>
+       <section class="containerOne">
+        <!-- <img class="me" src="pic.jpg" alt="Author Portrait"/> -->
+        <!-- <h2 class="header3">Ambitions</h2>-->
+          <section class="ambitions">
+            <span class="oneSpan">
+              Launch my very own app on the Apple appstore
+            </span>
+          </section>
+          <section class="ambitions ambitionsL">
+            <span class="oneSpan">
+              Become the CEO of a major tech company
+            </span>
+          </section>
+          <section class="ambitions">
+            <span class="oneSpan">
+              I want to travel the world
+            </span>
+          </section>
+          <article>
+              I’ve been told I can’t by many, but that has never stopped me from
+              persevering and getting to where I am today this has given me a unique
+              drive and ambition. I am a leader, aspiring full-stack developer, and
+              an optimist. With a positive mind and diligent work ethic, I’m detail
+              oriented and meticulous about completing everyday tasks with excellence.
+              I’m a natural leader who welcomes group projects where I can effectively
+              communicate with others and aggressively drive to accomplish our objectives.
+              Learning is pleasure and as full-stack developer in training, I am always reading,
+              researching and practicing new techniques to better hone my craft.
          </article>
        </section>
-       <section class="skills">
+       <section class="containerTwo">
          <h2 class="header2">Arsenal</h2>
          <ul class="skills_container">
            <li class="skills_list">
@@ -120,28 +110,76 @@
            </li>
         </ul>
      </section>
-     <section class="last">
-       <h2 class="header3">Ambitions</h2>
+     <section class="containerThree">
+       <ul class="project_list">
+          <li class="projects">
+             <div class="projectDiv">
+                 <h4>Horoscope</h4>
+		             <a href="https://arangodavid.github.io/Horoscope/"><img class="propic" src="one.png" /></a>
+             </div>
+          </li>
+          <li class="projects">
+             <div class="projectDiv">
+                 <h4 class="divHeader">The New York Times Mock</h4>
+                 <a href="https://arangodavid.github.io/The-New-York-Times/"><img class="propic propic2" src="two.png" /></a>
+             </div>
+          </li>
+          <li class="projects">
+             <div class="projectDiv">
+                <h4>JWLI Mock</h4>
+                <a href="https://arangodavid.github.io/JWLI/"><img class="propic" src="three.png" /></a>
+             </div>
+          </li>
+          <li class="projects">
+             <div class="projectDiv">
+                <h4>Attendance</h4>
+                <a href="https://arangodavid.github.io/Attendance-app/"><img class="propic" src="four.png" /></a>
+             </div>
+          </li>
+          <li class="projects">
+             <div class="projectDiv">
+                  <h4>Farm Animals</h4>
+                  <a href="https://arangodavid.github.io/4-animals-4-buttons/"><img class="propic" src="five.png" /></a>
+             </div>
+          </li>
+          <li class="projects">
+             <div class="projectDiv">
+                <h4>Image Gallery</h4>
+                <a href="https://arangodavid.github.io/Image-carousel-/"><img class="propic" src="six.png" /></a>
+             </div>
+          </li>
+          <li class="projects">
+             <div class="projectDiv">
+                <h4>Calculator</h4>
+                <a href="https://arangodavid.github.io/Calculator/"><img class="propic" src="seven.png" /></a>
+             </div>
+          </li>
+          <li class="projects">
+             <div class="projectDiv">
+                  <h4>Traffic Light</h4>
+                  <a href="https://arangodavid.github.io/Traffic-Light/"><img class="propic r" src="eight.png" /></a>
+             </div>
+          </li>
+      </ul>
      </section>
-    <footer>
-      <section class="fotter_sec">
-        <a class="logo" href="#" target="_blank"><i class="fa fa-twitter-square icon" aria-hidden="true"></i></a>
+
+     <footer>
+       <section class="footerContainer">
+        <section class="footer_sec">
+          <a class="logo" href="https://twitter.com/DavidFrontDev" target="_blank"><i class="fa fa-twitter-square fa-2x" aria-hidden="true"></i></a>
+        </section>
+        <section class="footer_sec">
+          <a class="logo" href="https://github.com/arangodavid" target="_blank"><i class="fa fa-github fa-2x" aria-hidden="true"></i></a>
+        </section>
+        <section class="footer_sec">
+          <a class="logo" href="https://www.linkedin.com/in/david-arango-435037134/" target="_blank"><i class="fa fa-linkedin-square fa-2x" aria-hidden="true"></i></a>
+        </section>
       </section>
-      <section class="fotter_sec">
-        <a class="logo" href="https://github.com/arangodavid" target="_blank"><i class="fa fa-github icon" aria-hidden="true"></i></a>
-      </section>
-      <section class="fotter_sec">
-        <a class="logo" href="https://www.linkedin.com/in/david-arango-435037134/" target="_blank"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
-      </section>
-      <section>
-        &copy; 2016 David Arango Portfolio. All rights reserved.</footer>
-      <section>
-  </section>
-
-
-
-
-
+        <section class="bottom">
+          &copy; 2016 David Arango Portfolio. All rights reserved.
+        </section>
+     </footer>
+     </section>
         <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.12.0.min.js"><\/script>')</script>
         <script src="js/plugins.js"></script>
@@ -156,5 +194,6 @@
             r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
             ga('create','UA-XXXXX-X','auto');ga('send','pageview');
         </script>
+
     </body>
 </html>

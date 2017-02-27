@@ -1,35 +1,22 @@
+$(document).ready(function (){
+  console.log("ready");
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// var numsArray = [];
-// var total = 0;
-//
-// function beautiful(multiple1,multiple2,upwardBound){
-//   	for(var n=0;n<=upwardBound;n++){
-// 		if (n % multiple1 === 0 || n % multiple2 === 0){
-// 			numsArray.push(n);
-//   	}
-// 	}
-//   sum(numsArray);
-// }
-//
-// 	function sum(multiArr){
-// 		multiArr.forEach(function(a){
-//       total += a;
-//     });
-//    console.log(total);
-//   }
-//
-// beautiful(3,5,1000);
+  var key = "https://crossorigin.me/https://api.darksky.net/forecast/53bae4534b0da5b692246d4e1623a959/37.8267,-122.4233";
+  $("body").on("click", function(){
+      console.log("clicked");
+      $.ajax({
+        url: key,
+        success: function(r){
+          console.log("success")
+          console.log(r);
+          var temperature = r.currently.temperature;
+          $("ul").append("<li>" + temperature + " degrees</li>")
+        },
+        error: function(e) {
+          console.log("wrong")
+  	       $("ul").append("<li>you done goofed</li>");
+           console.log(e);
+         }
+  });
+});
+});
