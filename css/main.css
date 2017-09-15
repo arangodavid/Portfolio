@@ -686,6 +686,7 @@ body{
     left: 0;
     width: 100%;
     height: 14.6rem;
+    -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
   }
   .section_three_card_back {
